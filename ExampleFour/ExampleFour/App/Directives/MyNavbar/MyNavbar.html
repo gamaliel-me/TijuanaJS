@@ -1,0 +1,16 @@
+﻿<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/" ng-click="vm.OnClick({})">{{vm.AppName}}</a>
+        </div>
+        <div>
+            <ul class="navbar-nav nav">
+                <li ng-repeat="Item in vm.Items"
+                    ng-class="{active: vm.IsActive(Item)}"
+                    ng-click="vm.OnClick(Item)">
+                    <a href="{{Item.Link}}">{{Item.Text}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

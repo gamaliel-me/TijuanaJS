@@ -1,0 +1,68 @@
+﻿<!--<!DOCTYPE html>-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Example Four</title>
+    <!--BOOTSTRAP STYLESHEETS-->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
+    <!--EXTRA STYLESHEETS-->
+    <link rel="stylesheet" href="http://css-spinners.com/css/spinner/spinner.css" type="text/css">
+</head>
+<body>
+    <!--<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#/">Example Four</a>
+            </div>
+            <div>
+                <ul class="navbar-nav nav">
+                    <li class="active"><a href="#/">Home</a></li>
+                    <li><a href="#/Attendees">Attendees</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>-->
+    <my-navbar app-name="Example Four"></my-navbar>
+    <div class="container">
+        <!--Angular Test <h3>1 + 7 = {{1 + 7}}</h3>-->
+        <div ng-view></div>
+        <div class="text-center my-spinner" hidden>
+            <div class="spinner-loader">
+                Loading...
+            </div>
+        </div>
+    </div>
+
+    <!--JQUERY SCRIPTS-->
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <!--BOOTSTRAP SCRIPTS-->
+    <script src="Scripts/bootstrap.min.js"></script>
+    <!--ANGULAR SCRIPTS-->
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular-resource.min.js"></script>
+
+    <!--APP SCRIPTS-->
+    <!--APP CONSTRUCTION-->
+    <script src="App/Config/Settings.js"></script>
+    <script src="App/Builder.js"></script>
+    <script src="App/Start.js"></script>
+    <!--APP CONTROLLERS-->
+    <script src="App/Features/Home/HomeController.js"></script>
+    <script src="App/Features/Attendees/AttendeesController.js"></script>
+    <!--APP MODELS-->
+    <script src="App/Models/Person.js"></script>
+    <script src="App/Models/Attendee.js"></script>
+    <!--APP FILTERS-->
+    <script src="App/Filters/Greeter.js"></script>
+    <!--APP DIRECTIVES-->
+    <script src="App/Directives/Edit/Edit.js"></script>
+    <script src="App/Directives/MyNavbar/MyNavbar.js"></script>
+    <!--APP SERVICES-->
+    <script src="App/Services/Resource.js"></script>
+
+</body>
+</html>

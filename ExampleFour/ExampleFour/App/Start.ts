@@ -1,0 +1,1 @@
+﻿new App.Builder(App.Config.Settings.AppName).Start(); 

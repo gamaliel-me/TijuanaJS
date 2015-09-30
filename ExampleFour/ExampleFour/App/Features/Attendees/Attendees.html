@@ -1,0 +1,44 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading panel-title">
+        <h2 class="text-uppercase">Attendees</h2>
+    </div>
+    <div class="panel-body">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 col-sm-offset-6 control-label">Search:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Search text..." ng-model="SearchText" />
+                </div>
+            </div>
+        </form>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>City</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="Attendee in Attendees | filter:SearchText">
+                    <td>{{Attendee.Id}}</td>
+                    <td>{{Attendee.FirstName}}</td>
+                    <td>{{Attendee.SurName}}</td>
+                    <td>{{Attendee.City}}</td>
+                    <td>{{Attendee.Email}}</td>
+                    <td>
+                        <button class="btn btn-success" ng-click="SayHi(Attendee)">Say Hi</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="form-group">
+            <button class="btn btn-primary" ng-click="Refresh()">Refresh</button>
+        </div>
+    </div>
+    <div class="panel-footer">
+    </div>
+</div>

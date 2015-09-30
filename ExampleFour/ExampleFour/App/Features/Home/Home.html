@@ -1,0 +1,40 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading panel-title">
+        <h2 class="text-uppercase">Home</h2>
+    </div>
+    <div class="panel-body">
+        <!--Angular Test <h3>1 + 7 = {{1 + 7}}</h3>-->
+        <!--Scope Test <h3>1 + {{Number}} = {{1 + Number}}</h3>-->
+        <!--Scope Test <h3>Hi, {{Person.FirstName}} {{Person.SurName}}</h3>-->
+        <!--Scope and Model Test <h3>Hi, {{Person.GetFullName()}}</h3>-->
+        Scope, Model and Filter Test <h3>{{Person | Greeter}}</h3>
+        <br /><br />
+        <h4>Model Binding Test</h4>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">First Name</label>
+                <div class="col-sm-6">
+                    <input class="form-control" type="text" ng-model="Person.FirstName" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Last Name</label>
+                <div class="col-sm-6">
+                    <input class="form-control" type="text" ng-model="Person.SurName" />
+                </div>
+            </div>
+            <h4>Directives Test</h4>
+            <edit-control type="text"
+                          label="First Name"
+                          placeholder="Ingresa tu nombre..."
+                          model="Person.FirstName"></edit-control>
+            <edit-control label="Last Name"
+                          model="Person.SurName"></edit-control>
+        </form>
+        <div class="form-group">
+            <button class="btn btn-success col-sm-offset-2" ng-click="SayHi()">Say Hi</button>
+        </div>
+    </div>
+    <div class="panel-footer">
+    </div>
+</div>

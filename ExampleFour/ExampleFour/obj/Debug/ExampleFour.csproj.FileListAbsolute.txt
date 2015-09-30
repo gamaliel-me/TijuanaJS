@@ -1,0 +1,12 @@
+F:\ExampleFour\ExampleFour\bin\ExampleFour.dll.config
+F:\ExampleFour\ExampleFour\bin\ExampleFour.dll
+F:\ExampleFour\ExampleFour\bin\ExampleFour.pdb
+F:\ExampleFour\ExampleFour\obj\Debug\ExampleFour.dll
+F:\ExampleFour\ExampleFour\obj\Debug\ExampleFour.pdb
+F:\ExampleFour\ExampleFour\obj\Debug\ExampleFour.csprojResolveAssemblyReference.cache
+C:\Users\gmedina\Desktop\ExampleFour\ExampleFour\bin\ExampleFour.dll.config
+C:\Users\gmedina\Desktop\ExampleFour\ExampleFour\bin\ExampleFour.dll
+C:\Users\gmedina\Desktop\ExampleFour\ExampleFour\bin\ExampleFour.pdb
+C:\Users\gmedina\Desktop\ExampleFour\ExampleFour\obj\Debug\ExampleFour.dll
+C:\Users\gmedina\Desktop\ExampleFour\ExampleFour\obj\Debug\ExampleFour.pdb
+C:\Users\gmedina\Desktop\ExampleFour\ExampleFour\obj\Debug\ExampleFour.csprojResolveAssemblyReference.cache
